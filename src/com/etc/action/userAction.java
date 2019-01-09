@@ -10,7 +10,7 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class userAction extends ActionSupport {
-	//下马个必须有
+	
 	private UserService userService;
 	
 	private Map session;
