@@ -34,4 +34,11 @@ public class UserDao {
 		String result=queryList.get(0).toString() ;
 		return result.equals(password);
 	}
+	
+	//返回用户信息
+	public User userInfo(String username)
+	{
+		User user=new User();
+		return user;
+	}
 }

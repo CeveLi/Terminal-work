@@ -21,8 +21,7 @@
     </head>
     <body>
         <div class="container">
-
-            
+        
 <div style="text-align:center;clear:both;">
 <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
 <script src="/follow.js" type="text/javascript"></script>
@@ -34,9 +33,8 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  action="loginAction.action" autocomplete="on" method="post"> 
+                            <form  action="loginAction.action" autocomplete="on"> 
                                 <h1>登陆</h1> 
-                                <p><s:actionerror/></p>
                                 <p> 
                                     <label for="username" class="uname" data-icon="u" > 用户名 </label>
                                     <input id="username" name="username" required="required" type="text" />
@@ -45,7 +43,7 @@
                                     <label for="password" class="youpasswd" data-icon="p"> 密码 </label>
                                     <input id="password" name="password" required="required" type="password"  /> 
                                 </p>
-                      
+                                <p></p>
                                 <p class="login button"> 
                                     <input type="submit" value="登陆" /> 
 								</p>

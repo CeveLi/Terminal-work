@@ -61,19 +61,18 @@
                             <div class="row">                         
                                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                                     <div class="logo-area">
-                                        <a href="index.html"><img class="img-responsive" src="img/logo.png" alt="logo"></a>
+                                        <a href="index.jsp"><img class="img-responsive" src="img/logo.png" alt="logo"></a>
                                     </div>
                                 </div>  
                                 <div class="col-lg-7 col-md-7 col-sm-9 col-xs-12">
                                     <div class="main-menu">
                                         <nav>
-                                            <ul>
-                                            
-                                             	<li><a href="logNreg.jsp">用户${sessionScope.user.username}</a></li>
+                                            <ul>                                         
+                                             	<li><a href="user-info.action">用户${sessionScope.user.username}</a></li>
                                                 <li><a href="#">主页</a></li>
-												<li><a href="about.html">关于我们</a></li>
-												<li><a href="shop.html">网格</a></li>
-												<li><a href="shop-list.html">列表</a></li>
+												<li><a href="about.jsp">关于我们</a></li>
+												<li><a href="shop.jsp">网格</a></li>
+												<li><a href="shop-list.jsp">列表</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -157,9 +156,9 @@
                                                         </div>
                                                         <ul class="sidenav-nav">
                                                             <li><a href="#">主页</a></li>
-															<li><a href="about.html">关于我们</a></li>
-															<li><a href="shop.html">商品表格</a></li>
-															<li><a href="shop-list.html">商品列表</a></li>
+															<li><a href="about.jsp">关于我们</a></li>
+															<li><a href="shop.jsp">商品表格</a></li>
+															<li><a href="shop-list.jsp">商品列表</a></li>
 															
                                                         </ul><!-- times-->
                                                     </div>
@@ -186,11 +185,11 @@
                                     <nav id="dropdown">
                                         <ul>
                                             <li><a href="#">主页</a></li>
-											<li><a href="about.html">关于我们</a></li>
-											<li><a href="shop.html">类别网格</a></li>
-											<li><a href="shop-list.html">类别列表</a></li>
-											<li><a href="single-product.html">单一产品</a></li>
-											<li><a href="contact.html">联系</a></li>                            
+											<li><a href="about.jsp">关于我们</a></li>
+											<li><a href="shop.jsp">类别网格</a></li>
+											<li><a href="shop-list.jsp">类别列表</a></li>
+											<li><a href="single-product.jsp">单一产品</a></li>
+											<li><a href="contact.jsp">联系</a></li>                            
                                         </ul>
                                     </nav>
                                 </div>                  
