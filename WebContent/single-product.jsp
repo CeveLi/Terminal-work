@@ -83,7 +83,7 @@
                             <div class="row">                         
                                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                                     <div class="logo-area">
-                                        <a href="index.html"><img class="img-responsive" src="img/logo2.png" alt="logo"></a>
+                                        <a href="index.jsp"><img class="img-responsive" src="img/logo2.png" alt="logo"></a>
                                     </div>
                                 </div>  
                                 <div class="col-lg-7 col-md-7 col-sm-9 col-xs-12">
@@ -370,6 +370,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                         <div class="related-product">
                                             <h3>相关案例</h3>
                                             <div class="rc-carousel"
@@ -505,7 +506,11 @@
                                                 <!-- Single product End -->
                                             </div>
                                         </div>
+                                    
+                                    <!--  这里结束-->
                                     </div>
+                                
+                                <!--zheli  -->
                                 </div>
                             </div>
                         </div>
