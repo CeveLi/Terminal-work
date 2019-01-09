@@ -69,7 +69,7 @@
                                         <nav>
                                             <ul>                                         
                                              	<li><a href="user-info.action">用户${sessionScope.user.username}</a></li>
-                                                <li><a href="#">主页</a></li>
+                                                <li><a href="index.jsp">主页</a></li>
 												<li><a href="about.jsp">关于我们</a></li>
 												<li><a href="shop.jsp">网格</a></li>
 												<li><a href="shop-list.jsp">列表</a></li>
@@ -155,7 +155,7 @@
                                                             </div>
                                                         </div>
                                                         <ul class="sidenav-nav">
-                                                            <li><a href="#">主页</a></li>
+                                                            <li><a href="index.jsp">主页</a></li>
 															<li><a href="about.jsp">关于我们</a></li>
 															<li><a href="shop.jsp">商品表格</a></li>
 															<li><a href="shop-list.jsp">商品列表</a></li>
@@ -184,7 +184,7 @@
                                 <div class="mobile-menu">
                                     <nav id="dropdown">
                                         <ul>
-                                            <li><a href="#">主页</a></li>
+                                            <li><a href="index.jsp">主页</a></li>
 											<li><a href="about.jsp">关于我们</a></li>
 											<li><a href="shop.jsp">类别网格</a></li>
 											<li><a href="shop-list.jsp">类别列表</a></li>

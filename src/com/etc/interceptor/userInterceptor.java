@@ -13,7 +13,6 @@ public class userInterceptor extends AbstractInterceptor{
 		User user=(User)actionContext.getSession().get("user");
 		if(user!=null)
 		{
-			System.out.println(user.getPassword());
 			return invocation.invoke();
 		}
 		else {

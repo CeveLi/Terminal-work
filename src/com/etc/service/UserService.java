@@ -30,6 +30,6 @@ public class UserService {
 		return userDao.addUser(user);
 	}
 	public User userInfo(User user){
-		return null;
+		return userDao.userInfo(user.getUsername());
 	}
 }

@@ -90,12 +90,12 @@
                                     <div class="main-menu">
                                         <nav>
                                             <ul>
-                                                <li><a href="#">主页</a></li>
-												<li><a href="about.html">关于我们</a></li>
-												<li><a href="shop.html">类别网格</a></li>
-												<li><a href="shop-list.html">类别列表</a></li>
-												<li><a href="single-product.html">单一产品</a></li>
-												<li><a href="contact.html">联系</a></li>  
+                                                <li><a href="index.jsp">主页</a></li>
+												<li><a href="about.jsp">关于我们</a></li>
+												<li><a href="shop.jsp">类别网格</a></li>
+												<li><a href="shop-list.jsp">类别列表</a></li>
+												<li><a href="single-product.jsp">单一产品</a></li>
+												<li><a href="contact.jsp">联系</a></li>  
                                             </ul>
                                         </nav>
                                     </div>
@@ -156,7 +156,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li><a href="checkout.html" class="checkout-button">结帐</a></li>        
+                                                    <li><a href="checkout.jsp" class="checkout-button">结帐</a></li>        
                                                 </ul>
                                             </li>
                                             <li>
@@ -174,12 +174,12 @@
                                                             </div>
                                                         </div>
                                                         <ul class="sidenav-nav">
-                                                            <li><a href="#">主页</a></li>
-															<li><a href="about.html">关于我们</a></li>
-															<li><a href="shop.html">类别网格</a></li>
-															<li><a href="shop-list.html">类别列表</a></li>
-															<li><a href="single-product.html">单一产品</a></li>
-															<li><a href="contact.html">联系</a></li>  
+                                                           	<li><a href="index.jsp">主页</a></li>
+															<li><a href="about.jsp">关于我们</a></li>
+															<li><a href="shop.jsp">类别网格</a></li>
+															<li><a href="shop-list.jsp">类别列表</a></li>
+															<li><a href="single-product.jsp">单一产品</a></li>
+															<li><a href="contact.jsp">联系</a></li>    
                                                         </ul><!-- times-->
                                                     </div>
                                                     <span class="side-menu-open side-menu-trigger"><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -200,12 +200,12 @@
                                 <div class="mobile-menu">
                                     <nav id="dropdown">
                                         <ul>
-                                            <li><a href="#">主页</a></li>
-											<li><a href="about.html">关于我们</a></li>
-											<li><a href="shop.html">类别网格</a></li>
-											<li><a href="shop-list.html">类别列表</a></li>
-											<li><a href="single-product.html">单一产品</a></li>
-											<li><a href="contact.html">联系</a></li>                              
+                                            <li><a href="index.jsp">主页</a></li>
+											<li><a href="about.jsp">关于我们</a></li>
+											<li><a href="shop.jsp">类别网格</a></li>
+											<li><a href="shop-list.jsp">类别列表</a></li>
+											<li><a href="single-product.jsp">单一产品</a></li>
+											<li><a href="contact.jsp">联系</a></li>                                
                                         </ul>
                                     </nav>
                                 </div>                  
@@ -224,8 +224,8 @@
                     </div>
                     <div class="breadcrumb">
                         <ul>
-                            <li><a href="index.html">主页 -</a></li>
-                            <li><a href="index.html">购物 -</a></li>
+                            <li><a href="index.jsp">主页 -</a></li>
+                            <li><a href="shop.jsp">购物 -</a></li>
                             <li class="active">类别列表</li>
                         </ul>
                     </div>

@@ -11,9 +11,26 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class userAction extends ActionSupport {
 	User user=new User();
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
 	private String username;
 	private String password;
 	private Integer phone;
+	private float money;
+
+	public float getMoney() {
+		return money;
+	}
+
+	public void setMoney(float money) {
+		this.money = money;
+	}
+
 	public String getUsername() {
 		return username;
 	}
@@ -38,13 +55,10 @@ public class userAction extends ActionSupport {
 	public String execute()
 	{
 		Map session = ActionContext.getContext().getSession();
-		User user0=(User) session.get("user");
+		user=(User) session.get("user");
 		UserService userService=new UserService();
-		//user=userService.userInfo(user0.getUsername());
-		user0.getPassword();
-		user0.getPhone();
-		user0.getUsername();
-		System.out.println("hhhhhhhhhhhhhhhhhhh");
+		user=userService.userInfo(user);
+		//System.out.println("123");
 		return SUCCESS;
 	}
 }

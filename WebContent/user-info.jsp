@@ -51,9 +51,12 @@
 <body>
 <table class="table" style="position:absolute;top:180px;left:120px;color:black;text-decoration:none;font-size:small;font-weight:bold;width:700px;" cellspacing="25px">
 	 <thead>  
-		<tr><th>年龄</th><th>邮箱</th><th>爱好</th><th>余额</th></tr>
+		<tr><th>用户名字</th><th>余额</th><th>电话</th></tr>
 	</thead>
 	<tbody>
+		<tr>
+			<td>${sessionScope.user.username}</td><td>${sessionScope.user.money}</td><td></td>
+		</tr>
 	</tbody>
 </table>
 </body>
