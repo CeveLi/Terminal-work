@@ -33,8 +33,9 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  action="loginAction.action" autocomplete="on"> 
+                            <form  action="loginAction.action" autocomplete="on" method="post"> 
                                 <h1>登陆</h1> 
+                                <p><s:actionerror/></p>
                                 <p> 
                                     <label for="username" class="uname" data-icon="u" > 用户名 </label>
                                     <input id="username" name="username" required="required" type="text" />
@@ -57,6 +58,7 @@
                         <div id="register" class="animate form">
                             <form  action="registerAction.action" autocomplete="on" method="post"> 
                                 <h1> 注册 </h1> 
+                                <p><s:actionerror/></p>
                                 <p> 
                                     <label for="usernamesignup" class="uname" data-icon="u">用户名</label>
                                     <input id="usernamesignup" name="username" required="required" type="text" />

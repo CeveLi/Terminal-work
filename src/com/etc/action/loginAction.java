@@ -13,7 +13,8 @@ public class loginAction extends ActionSupport implements SessionAware {
 	private String username;
 	private String password;
 	
-	 private Map session;  
+	private Map session;  
+	
     public void setSession(Map session) {  
         this.session = session;  
     }  

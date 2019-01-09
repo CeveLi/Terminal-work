@@ -10,41 +10,28 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class userAction extends ActionSupport {
-	User user=new User();
-	private String username;
-	private String password;
-	private Integer phone;
-	public String getUsername() {
-		return username;
+	
+	private UserService userService;
+	
+	private Map session;
+	
+	public void setSession(Map session) {  
+        this.session = session;  
+    }  
+	
+	public void setUserService(UserService userService) {
+		this.userService = userService;
 	}
+	
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	public Integer getPhone() {
-		return phone;
-	}
-	public void setPhone(Integer phone) {
-		this.phone = phone;
-	}
 	public String execute()
 	{
+		User user = new User();
 		Map session = ActionContext.getContext().getSession();
-		User user0=(User) session.get("user");
-		UserService userService=new UserService();
-		//user=userService.userInfo(user0.getUsername());
-		user0.getPassword();
-		user0.getPhone();
-		user0.getUsername();
-		System.out.println("hhhhhhhhhhhhhhhhhhh");
+		user=(User) session.get("user");
+		user=userService.userInfo(user);
+		session.put("user", user);
+		System.out.println("123");
 		return SUCCESS;
 	}
 }

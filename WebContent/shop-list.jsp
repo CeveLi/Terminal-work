@@ -90,7 +90,7 @@
                                     <div class="main-menu">
                                         <nav>
                                             <ul>
-                                                <li><a href="#">主页</a></li>
+                                                <li><a href="index.jsp">主页</a></li>
 												<li><a href="about.jsp">关于我们</a></li>
 												<li><a href="shop.jsp">类别网格</a></li>
 												<li><a href="shop-list.jsp">类别列表</a></li>
@@ -174,12 +174,13 @@
                                                             </div>
                                                         </div>
                                                         <ul class="sidenav-nav">
-                                                            <li><a href="#">主页</a></li>
+				                                           	<li><a href="index.jsp">主页</a></li>
 															<li><a href="about.jsp">关于我们</a></li>
 															<li><a href="shop.jsp">类别网格</a></li>
 															<li><a href="shop-list.jsp">类别列表</a></li>
 															<li><a href="single-product.jsp">单一产品</a></li>
-															<li><a href="contact.jsp">联系</a></li>  
+															<li><a href="contact.jsp">联系</a></li>    
+
                                                         </ul><!-- times-->
                                                     </div>
                                                     <span class="side-menu-open side-menu-trigger"><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -200,12 +201,13 @@
                                 <div class="mobile-menu">
                                     <nav id="dropdown">
                                         <ul>
-                                            <li><a href="#">主页</a></li>
+								            <li><a href="index.jsp">主页</a></li>
 											<li><a href="about.jsp">关于我们</a></li>
 											<li><a href="shop.jsp">类别网格</a></li>
 											<li><a href="shop-list.jsp">类别列表</a></li>
 											<li><a href="single-product.jsp">单一产品</a></li>
-											<li><a href="contact.jsp">联系</a></li>                              
+											<li><a href="contact.jsp">联系</a></li>                                
+
                                         </ul>
                                     </nav>
                                 </div>                  
@@ -226,6 +228,7 @@
                         <ul>
                             <li><a href="index.jsp">主页 -</a></li>
                             <li><a href="index.jsp">购物 -</a></li>
+                            <li><a href="shop.jsp">购物 -</a></li>
                             <li class="active">类别列表</li>
                         </ul>
                     </div>
@@ -302,13 +305,7 @@
                                     </div>  
 								   </s:iterator>
 								</s:bean>
-                                    <!-- Start Single product -->
-                                     <c:forEach var="i" begin="1" end="5" step="1">
-                                        
-                                        
-                                    </c:forEach>
                                     
-                                    <!-- End Single product -->
                                     
                                 </div>
                                 <div class="pagination-wrapper">

@@ -14,7 +14,6 @@ public class UserDao {
 
 	// 添加用户
 	public boolean addUser(User user) {
-		System.out.println("UserDao成功");
 		if(!verifyUsername(user.getUsername())) {
 			hibernateTemplate.save(user);
 			return true;
@@ -38,7 +37,13 @@ public class UserDao {
 	//返回用户信息
 	public User userInfo(String username)
 	{
-		User user=new User();
+		List queryList = hibernateTemplate.find("from User where username=?",username);
+		
+		
+		User user =(User) queryList.get(0);
+		System.out.println(user);
+		
+		//System.out.println(user.getPhone());
 		return user;
 	}
 }

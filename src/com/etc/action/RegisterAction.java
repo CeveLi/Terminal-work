@@ -52,9 +52,11 @@ public class RegisterAction extends ActionSupport {
 		System.out.println("RegAction成功");
 		if(userService.userRegister(username, password,phone)) {
 			super.addActionMessage("注册成功！");
+			return "success";
 		} else {
 			super.addActionError("注册失败,该用户名已存在！");
+			return "input";
 		}
-		return "success";
+		
 	}
 }
