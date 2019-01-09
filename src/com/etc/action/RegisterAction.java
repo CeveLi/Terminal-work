@@ -49,7 +49,6 @@ public class RegisterAction extends ActionSupport {
 	}
 	
 	public String execute() {
-		System.out.println("RegAction成功");
 		if(userService.userRegister(username, password,phone)) {
 			super.addActionMessage("注册成功！");
 			return "success";

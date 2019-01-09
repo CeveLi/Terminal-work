@@ -32,4 +32,8 @@ public class UserService {
 	public User userInfo(User user){
 		return userDao.userInfo(user.getUsername());
 	}
+	
+	public void addBook(int bid,int uid) {
+		userDao.addBook(bid,uid);
+	}
 }

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.orm.hibernate5.HibernateTemplate;
 
+import com.etc.entity.History;
 import com.etc.entity.User;
 
 public class UserDao {
@@ -45,5 +46,13 @@ public class UserDao {
 		
 		//System.out.println(user.getPhone());
 		return user;
+	}
+	
+	//history插入一条数据
+	public void addBook(int bid,int uid){
+		History his=new History();
+		his.setBid(bid);
+		his.setUid(uid);
+		hibernateTemplate.save(his);
 	}
 }

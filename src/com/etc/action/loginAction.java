@@ -57,7 +57,6 @@ public class loginAction extends ActionSupport implements SessionAware {
 			
 			user=userService.userInfo(user);
 			session.put("user", user);
-			System.out.println(user);
 			
 			return "success";
 		} else {
