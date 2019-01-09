@@ -1,9 +1,9 @@
 package com.etc.entity;
 
 public class Book {
-	int bid;
-	String name;
-	int price;
+	private int bid;
+	private String name;
+	private int price;
 	public int getBid() {
 		return bid;
 	}
@@ -21,5 +21,9 @@ public class Book {
 	}
 	public void setPrice(int price) {
 		this.price = price;
+	}
+	@Override
+	public String toString() {
+		return "Book [bid=" + bid + ", name=" + name + ", price=" + price + "]";
 	}
 }

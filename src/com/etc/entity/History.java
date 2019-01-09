@@ -1,8 +1,16 @@
 package com.etc.entity;
 
 public class History {
-	int uid;
-	int bid;
+	private int id;
+	private int uid;
+	private int bid;
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public int getUid() {
 		return uid;
 	}
@@ -14,5 +22,9 @@ public class History {
 	}
 	public void setBid(int bid) {
 		this.bid = bid;
+	}
+	@Override
+	public String toString() {
+		return "History [id=" + id + ", uid=" + uid + ", bid=" + bid + "]";
 	}
 }
