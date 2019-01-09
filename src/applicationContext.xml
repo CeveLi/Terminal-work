@@ -37,6 +37,8 @@
     	<property name="mappingResources">
     		<list>
     			<value>com/etc/entity/User.hbm.xml</value>
+    			<value>com/etc/entity/History.hbm.xml</value>
+    			<value>com/etc/entity/Book.hbm.xml</value>
     		</list>
     	</property>
     </bean>

@@ -33,7 +33,5 @@ public class UserService {
 		return userDao.userInfo(user.getUsername());
 	}
 	
-	public void addBook(int bid,int uid) {
-		userDao.addBook(bid,uid);
-	}
+	
 }

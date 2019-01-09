@@ -48,11 +48,5 @@ public class UserDao {
 		return user;
 	}
 	
-	//history插入一条数据
-	public void addBook(int bid,int uid){
-		History his=new History();
-		his.setBid(bid);
-		his.setUid(uid);
-		hibernateTemplate.save(his);
-	}
+	
 }
