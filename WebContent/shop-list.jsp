@@ -83,7 +83,7 @@
                             <div class="row">                         
                                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                                     <div class="logo-area">
-                                        <a href="index.html"><img class="img-responsive" src="img/logo2.png" alt="logo"></a>
+                                        <a href="index.jsp"><img class="img-responsive" src="img/logo2.png" alt="logo"></a>
                                     </div>
                                 </div>  
                                 <div class="col-lg-7 col-md-7 col-sm-9 col-xs-12">
@@ -91,11 +91,11 @@
                                         <nav>
                                             <ul>
                                                 <li><a href="#">主页</a></li>
-												<li><a href="about.html">关于我们</a></li>
-												<li><a href="shop.html">类别网格</a></li>
-												<li><a href="shop-list.html">类别列表</a></li>
-												<li><a href="single-product.html">单一产品</a></li>
-												<li><a href="contact.html">联系</a></li>  
+												<li><a href="about.jsp">关于我们</a></li>
+												<li><a href="shop.jsp">类别网格</a></li>
+												<li><a href="shop-list.jsp">类别列表</a></li>
+												<li><a href="single-product.jsp">单一产品</a></li>
+												<li><a href="contact.jsp">联系</a></li>  
                                             </ul>
                                         </nav>
                                     </div>
@@ -156,7 +156,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li><a href="checkout.html" class="checkout-button">结帐</a></li>        
+                                                    <li><a href="checkout.jsp" class="checkout-button">结帐</a></li>        
                                                 </ul>
                                             </li>
                                             <li>
@@ -175,11 +175,11 @@
                                                         </div>
                                                         <ul class="sidenav-nav">
                                                             <li><a href="#">主页</a></li>
-															<li><a href="about.html">关于我们</a></li>
-															<li><a href="shop.html">类别网格</a></li>
-															<li><a href="shop-list.html">类别列表</a></li>
-															<li><a href="single-product.html">单一产品</a></li>
-															<li><a href="contact.html">联系</a></li>  
+															<li><a href="about.jsp">关于我们</a></li>
+															<li><a href="shop.jsp">类别网格</a></li>
+															<li><a href="shop-list.jsp">类别列表</a></li>
+															<li><a href="single-product.jsp">单一产品</a></li>
+															<li><a href="contact.jsp">联系</a></li>  
                                                         </ul><!-- times-->
                                                     </div>
                                                     <span class="side-menu-open side-menu-trigger"><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -201,11 +201,11 @@
                                     <nav id="dropdown">
                                         <ul>
                                             <li><a href="#">主页</a></li>
-											<li><a href="about.html">关于我们</a></li>
-											<li><a href="shop.html">类别网格</a></li>
-											<li><a href="shop-list.html">类别列表</a></li>
-											<li><a href="single-product.html">单一产品</a></li>
-											<li><a href="contact.html">联系</a></li>                              
+											<li><a href="about.jsp">关于我们</a></li>
+											<li><a href="shop.jsp">类别网格</a></li>
+											<li><a href="shop-list.jsp">类别列表</a></li>
+											<li><a href="single-product.jsp">单一产品</a></li>
+											<li><a href="contact.jsp">联系</a></li>                              
                                         </ul>
                                     </nav>
                                 </div>                  
@@ -224,8 +224,8 @@
                     </div>
                     <div class="breadcrumb">
                         <ul>
-                            <li><a href="index.html">主页 -</a></li>
-                            <li><a href="index.html">购物 -</a></li>
+                            <li><a href="index.jsp">主页 -</a></li>
+                            <li><a href="index.jsp">购物 -</a></li>
                             <li class="active">类别列表</li>
                         </ul>
                     </div>
@@ -258,16 +258,21 @@
                                     </div>
                                 </div>
                                 <div class="product-category-list">
-                                    <!-- Start Single product -->
-                                    <div class="single-product-list">
+                                <s:bean name="org.apache.struts2.util.Counter" id="counter">
+								   <s:param name="first" value="1" />  
+								   <s:param name="last" value="5" />
+								   <s:iterator>
+								     <div class="single-product-list">
                                         <div class="product-list-image col-lg-4 col-md-4 col-sm-4">
                                             <div class="list-image">
-                                                <img src="img/product/product1.jpg" alt="">
+                                                <img src="img/product/product<s:property/>.jpg" alt="">
+                                                
                                             </div>
                                         </div>
+                                        
                                         <div class="product-list-content col-lg-8 col-md-8 col-sm-8">
                                             <div class="product-content">
-                                                <h3 class="name"><a href="single-product.html">产品标题</a></h3>
+                                                <h3 class="name"><a href="single-product.jsp">产品标题</a></h3>
                                                 <div class="review">
                                                     <ul>
                                                         <li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -294,160 +299,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- End Single product -->
+                                    </div>  
+								   </s:iterator>
+								</s:bean>
                                     <!-- Start Single product -->
-                                    <div class="single-product-list">
-                                        <div class="product-list-image col-lg-4 col-md-4 col-sm-4">
-                                            <div class="list-image">
-                                                <img src="img/product/product2.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="product-list-content col-lg-8 col-md-8 col-sm-8">
-                                            <div class="product-content">
-                                                <h3 class="name"><a href="single-product.html">产品标题</a></h3>
-                                                <div class="review">
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li class="uncolor"><a href="#"><i class="fa fa-star"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <span class="regular-price">
-                                                    <span class="product-price">$59.00</span>
-                                                </span>
-                                                <div class="product-short-description">
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis in, officiis ea quae assumenda ipsam dolores tempore illo ullam odit natus sed rem distinctio atque mollitia. Illo est accusamus laboriosam.
-                                                    </p>
-                                                </div>
-                                                <div class="product-list-action">
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-compress" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#">添加到购物车</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                     <c:forEach var="i" begin="1" end="5" step="1">
+                                        
+                                        
+                                    </c:forEach>
+                                    
                                     <!-- End Single product -->
-                                    <!-- Start Single product -->
-                                    <div class="single-product-list">
-                                        <div class="product-list-image col-lg-4 col-md-4 col-sm-4">
-                                            <div class="list-image">
-                                                <img src="img/product/product3.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="product-list-content col-lg-8 col-md-8 col-sm-8">
-                                            <div class="product-content">
-                                                <h3 class="name"><a href="single-product.html">产品标题</a></h3>
-                                                <div class="review">
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li class="uncolor"><a href="#"><i class="fa fa-star"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <span class="regular-price">
-                                                    <span class="product-price">$59.00</span>
-                                                </span>
-                                                <div class="product-short-description">
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis in, officiis ea quae assumenda ipsam dolores tempore illo ullam odit natus sed rem distinctio atque mollitia. Illo est accusamus laboriosam.
-                                                    </p>
-                                                </div>
-                                                <div class="product-list-action">
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-compress" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#">添加到购物车</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single product -->
-                                    <!-- Start Single product -->
-                                    <div class="single-product-list">
-                                        <div class="product-list-image col-lg-4 col-md-4 col-sm-4">
-                                            <div class="list-image">
-                                                <img src="img/product/product4.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="product-list-content col-lg-8 col-md-8 col-sm-8">
-                                            <div class="product-content">
-                                                <h3 class="name"><a href="single-product.html">产品标题</a></h3>
-                                                <div class="review">
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li class="uncolor"><a href="#"><i class="fa fa-star"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <span class="regular-price">
-                                                    <span class="product-price">$59.00</span>
-                                                </span>
-                                                <div class="product-short-description">
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis in, officiis ea quae assumenda ipsam dolores tempore illo ullam odit natus sed rem distinctio atque mollitia. Illo est accusamus laboriosam.
-                                                    </p>
-                                                </div>
-                                                <div class="product-list-action">
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-compress" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#">添加到购物车</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single product -->
-                                    <!-- Start Single product -->
-                                    <div class="single-product-list">
-                                        <div class="product-list-image col-lg-4 col-md-4 col-sm-4">
-                                            <div class="list-image">
-                                                <img src="img/product/product1.jpg" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="product-list-content col-lg-8 col-md-8 col-sm-8">
-                                            <div class="product-content">
-                                                <h3 class="name"><a href="single-product.html">产品标题</a></h3>
-                                                <div class="review">
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-star"></i></a></li>
-                                                        <li class="uncolor"><a href="#"><i class="fa fa-star"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                                <span class="regular-price">
-                                                    <span class="product-price">$59.00</span>
-                                                </span>
-                                                <div class="product-short-description">
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis in, officiis ea quae assumenda ipsam dolores tempore illo ullam odit natus sed rem distinctio atque mollitia. Illo est accusamus laboriosam.
-                                                    </p>
-                                                </div>
-                                                <div class="product-list-action">
-                                                    <ul>
-                                                        <li><a href="#"><i class="fa fa-compress" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#">添加到购物车</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- End Single product -->
+                                    
                                 </div>
                                 <div class="pagination-wrapper">
                                     <nav aria-label="Page navigation">
