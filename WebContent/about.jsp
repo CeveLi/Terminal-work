@@ -83,7 +83,7 @@
                             <div class="row">                         
                                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                                     <div class="logo-area">
-                                        <a href="index.html"><img class="img-responsive" src="img/logo2.png" alt="logo"></a>
+                                        <a href="index.jsp"><img class="img-responsive" src="img/logo2.png" alt="logo"></a>
                                     </div>
                                 </div>  
                                 <div class="col-lg-7 col-md-7 col-sm-9 col-xs-12">
@@ -91,11 +91,11 @@
                                         <nav>
                                             <ul>
                                                 <li><a href="#">主页</a></li>
-												<li><a href="about.html">关于我们</a></li>
-												<li><a href="shop.html">类别网格</a></li>
-												<li><a href="shop-list.html">类别列表</a></li>
-												<li><a href="single-product.html">单一产品</a></li>
-												<li><a href="contact.html">联系我们</a></li>
+												<li><a href="about.jsp">关于我们</a></li>
+												<li><a href="shop.jsp">类别网格</a></li>
+												<li><a href="shop-list.jsp">类别列表</a></li>
+												<li><a href="single-product.jsp">单一产品</a></li>
+												<li><a href="contact.jsp">联系我们</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -156,7 +156,7 @@
                                                             </div>
                                                         </div>
                                                     </li>
-                                                    <li><a href="checkout.html" class="checkout-button">Checkout</a></li>        
+                                                    <li><a href="checkout.jsp" class="checkout-button">Checkout</a></li>        
                                                 </ul>
                                             </li>
                                             <li>
@@ -175,11 +175,11 @@
                                                         </div>
                                                         <ul class="sidenav-nav">
                                                             <li><a href="#">主页</a></li>
-															<li><a href="about.html">关于我们</a></li>
-															<li><a href="shop.html">类别网格</a></li>
-															<li><a href="shop-list.html">类别列表</a></li>
-															<li><a href="single-product.html">单一产品</a></li>
-															<li><a href="contact.html">联系我们</a></li>
+															<li><a href="about.jsp">关于我们</a></li>
+															<li><a href="shop.jsp">类别网格</a></li>
+															<li><a href="shop-list.jsp">类别列表</a></li>
+															<li><a href="single-product.jsp">单一产品</a></li>
+															<li><a href="contact.jsp">联系我们</a></li>
                                                         </ul><!-- times-->
                                                     </div>
                                                     <span class="side-menu-open side-menu-trigger"><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -201,11 +201,11 @@
                                     <nav id="dropdown">
                                         <ul>
                                             <li><a href="#">主页</a></li>
-											<li><a href="about.html">关于我们</a></li>
-											<li><a href="shop.html">类别网格</a></li>
-											<li><a href="shop-list.html">类别列表</a></li>
-											<li><a href="single-product.html">单一产品</a></li>
-											<li><a href="contact.html">联系我们</a></li>                         
+											<li><a href="about.jsp">关于我们</a></li>
+											<li><a href="shop.jsp">类别网格</a></li>
+											<li><a href="shop-list.jsp">类别列表</a></li>
+											<li><a href="single-product.jsp">单一产品</a></li>
+											<li><a href="contact.jsp">联系我们</a></li>                         
                                         </ul>
                                     </nav>
                                 </div>                  
@@ -224,7 +224,7 @@
                     </div>
                     <div class="breadcrumb">
                         <ul>
-                            <li><a href="index.html">首页 -</a></li>
+                            <li><a href="index.jsp">首页 -</a></li>
                             <li><a href="#">页数 - </a></li>
                             <li class="active">关于我们</li>
                         </ul>
