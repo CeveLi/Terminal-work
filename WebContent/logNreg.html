@@ -32,7 +32,7 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  action="#" autocomplete="on"> 
+                            <form  action="loginAction.action" autocomplete="on"> 
                                 <h1>登陆</h1> 
                                 <p> 
                                     <label for="username" class="uname" data-icon="u" > 用户名 </label>
@@ -54,23 +54,23 @@
                         </div>
 
                         <div id="register" class="animate form">
-                            <form  action="#" autocomplete="on"> 
+                            <form  action="registerAction.action" autocomplete="on" method="post"> 
                                 <h1> 注册 </h1> 
                                 <p> 
                                     <label for="usernamesignup" class="uname" data-icon="u">用户名</label>
-                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" />
+                                    <input id="usernamesignup" name="username" required="required" type="text" />
                                 </p>
                                 <p> 
-                                    <label for="emailsignup" class="youmail" data-icon="e" > 邮箱</label>
-                                    <input id="emailsignup" name="emailsignup" required="required" type="email" /> 
+                                    <label for="emailsignup" class="youmail" data-icon="e" > 电话</label>
+                                    <input id="emailsignup" name="phone" required="required" type="text" /> 
                                 </p>
                                 <p> 
                                     <label for="passwordsignup" class="youpasswd" data-icon="p">密码</label>
-                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" />
+                                    <input id="passwordsignup" name="password" required="required" type="password" />
                                 </p>
                                 <p> 
                                     <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">再确认一次密码</label>
-                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" />
+                                    <input id="passwordsignup_confirm" name="password_confirm" required="required" type="password" />
                                 </p>
                                 <p class="signin button"> 
 									<input type="submit" value="注册"/> 
