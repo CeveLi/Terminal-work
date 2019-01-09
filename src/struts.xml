@@ -3,6 +3,13 @@
         "http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
 	<package name="demo" namespace="/" extends="struts-default">
+		<interceptors>
+			<interceptor name="userReject" class="com.etc.interceptor.userInterceptor" />
+			<interceptor-stack name="myStack">
+			<interceptor-ref name="defaultStack" />
+			<interceptor-ref name="userReject" />
+			</interceptor-stack>
+		</interceptors>
 		<!-- class属性中不写action的路径，因为在spring已经配置过了，应该写spring中bean的id -->
 		<action name="loginAction" class="loginAction">
 			<result name="success">/index.jsp</result>
@@ -12,6 +19,11 @@
 		<action name="registerAction" class="registerAction">
 			<result name="success">/logNreg.html</result>
 			<result name="input">/logNreg.html</result>
+		</action>
+		<action name="user-info" class="com.etc.action.userAction">
+			<result name="success">/user-info.jsp</result>
+			<result name="login">/logNreg.html</result>
+			<interceptor-ref name="myStack" />
 		</action>
 	</package>
 </struts>

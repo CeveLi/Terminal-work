@@ -29,4 +29,7 @@ public class UserService {
 		user.setPhone(phone);
 		return userDao.addUser(user);
 	}
+	public User userInfo(User user){
+		return null;
+	}
 }
