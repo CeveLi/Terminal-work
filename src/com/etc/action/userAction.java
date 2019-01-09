@@ -10,7 +10,7 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class userAction extends ActionSupport {
-	
+	//下马个必须有
 	private UserService userService;
 	
 	private Map session;
@@ -26,12 +26,7 @@ public class userAction extends ActionSupport {
 
 	public String execute()
 	{
-		User user = new User();
-		Map session = ActionContext.getContext().getSession();
-		user=(User) session.get("user");
-		user=userService.userInfo(user);
-		session.put("user", user);
-		System.out.println("123");
+		
 		return SUCCESS;
 	}
 }

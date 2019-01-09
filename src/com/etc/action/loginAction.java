@@ -54,9 +54,10 @@ public class loginAction extends ActionSupport implements SessionAware {
 		if(userService.loginVerify(username, password)){
 			User user = new User();
 			user.setUsername(username);
-			user.setPassword(password);
+			
+			user=userService.userInfo(user);
 			session.put("user", user);
-			System.out.println("³É¹¦");
+			System.out.println(user);
 			
 			return "success";
 		} else {
