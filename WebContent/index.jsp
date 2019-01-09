@@ -69,7 +69,7 @@
                                         <nav>
                                             <ul>
                                             
-                                             	<li><a href="logNreg.html">用户${sessionScope.user.username}</a></li>
+                                             	<li><a href="logNreg.jsp">用户${sessionScope.user.username}</a></li>
                                                 <li><a href="#">主页</a></li>
 												<li><a href="about.html">关于我们</a></li>
 												<li><a href="shop.html">网格</a></li>

@@ -6,12 +6,12 @@
 		<!-- class属性中不写action的路径，因为在spring已经配置过了，应该写spring中bean的id -->
 		<action name="loginAction" class="loginAction">
 			<result name="success">/index.jsp</result>
-			<result name="input">/logNreg.html</result>
+			<result name="input">/logNreg.jsp</result>
 		</action>
 		
 		<action name="registerAction" class="registerAction">
-			<result name="success">/logNreg.html</result>
-			<result name="input">/logNreg.html</result>
+			<result name="success">/logNreg.jsp</result>
+			<result name="input">/logNreg.jsp</result>
 		</action>
 	</package>
 </struts>

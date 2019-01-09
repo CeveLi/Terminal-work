@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 lt8"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7 lt8"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8 lt8"> <![endif]-->
@@ -32,8 +34,9 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  action="loginAction.action" autocomplete="on"> 
+                            <form  action="loginAction.action" autocomplete="on" method="post"> 
                                 <h1>登陆</h1> 
+                                <p><s:actionerror/></p>
                                 <p> 
                                     <label for="username" class="uname" data-icon="u" > 用户名 </label>
                                     <input id="username" name="username" required="required" type="text" />
