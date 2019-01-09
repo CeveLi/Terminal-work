@@ -64,11 +64,24 @@
     	<property name="userService" ref="userService"></property>
     </bean>
     
+    <bean id="listAction" class="com.etc.action.listAction" scope="prototype">
+    	<property name="bookService" ref="bookService"></property>
+    </bean>
+    
     <bean id="userService" class="com.etc.service.UserService">
     	<property name="userDao" ref="userDao"></property>
     </bean>
     
+    <bean id="bookService" class="com.etc.service.BookService">
+    	<property name="bookDao" ref="bookDao"></property>
+    </bean>
+    
     <bean id="userDao" class="com.etc.dao.UserDao">
+    	<property name="hibernateTemplate" ref="hibernateTemplate"></property>
+    </bean>
+    
+    
+    <bean id="bookDao" class="com.etc.dao.BookDao">
     	<property name="hibernateTemplate" ref="hibernateTemplate"></property>
     </bean>
     

@@ -24,7 +24,7 @@ public class BookDao {
 	}
 	//获取全部图书
 	public List<Book> getAllBooks(){
-		
+		System.out.println("bookdao成功");
 		List<Book> list = (List<Book>)hibernateTemplate.find("from Book");
 		return list;
 	}

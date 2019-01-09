@@ -72,7 +72,7 @@
                                                 <li><a href="index.jsp">主页</a></li>
 												<li><a href="about.jsp">关于我们</a></li>
 												<li><a href="shop.jsp">网格</a></li>
-												<li><a href="shop-list.jsp">列表</a></li>
+												<li><a href="listAction.action">列表</a></li>
                                             </ul>
                                         </nav>
                                     </div>

@@ -261,21 +261,22 @@
                                     </div>
                                 </div>
                                 <div class="product-category-list">
-                                <s:bean name="org.apache.struts2.util.Counter" id="counter">
-								   <s:param name="first" value="1" />  
-								   <s:param name="last" value="5" />
-								   <s:iterator>
-								     <div class="single-product-list">
+                                <s:debug></s:debug>
+                                
+                                <!--  使用s：iterator标签循环获取session,booklist值并命名为book-->
+                                <s:iterator id="bookiterator" value="#session.booklist" var="book" >
+                                
+					                 <div class="single-product-list">
                                         <div class="product-list-image col-lg-4 col-md-4 col-sm-4">
                                             <div class="list-image">
-                                                <img src="img/product/product<s:property/>.jpg" alt="">
+                                                <img src="img/product/product<s:property value="#book.bid"/>.jpg" alt="">
                                                 
                                             </div>
                                         </div>
                                         
                                         <div class="product-list-content col-lg-8 col-md-8 col-sm-8">
                                             <div class="product-content">
-                                                <h3 class="name"><a href="single-product.jsp">产品标题</a></h3>
+                                                <h3 class="name"><a href="single-product.jsp"><s:property value="#book.name"/></a></h3>
                                                 <div class="review">
                                                     <ul>
                                                         <li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -286,7 +287,7 @@
                                                     </ul>
                                                 </div>
                                                 <span class="regular-price">
-                                                    <span class="product-price">$59.00</span>
+                                                    <span class="product-price"><s:property value="#book.price"/></span>
                                                 </span>
                                                 <div class="product-short-description">
                                                     <p>
@@ -297,12 +298,19 @@
                                                     <ul>
                                                         <li><a href="#"><i class="fa fa-compress" aria-hidden="true"></i></a></li>
                                                         <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                        <li><a href="#">添加到购物车</a></li>
+                                                        <li><a href="shop.jsp?bid=<s:property value="#book.bid"/>">立即购买</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>  
+					         </s:iterator>
+                                
+                                <s:bean name="org.apache.struts2.util.Counter" id="counter">
+								   <s:param name="first" value="1" />  
+								   <s:param name="last" value="5" />
+								   <s:iterator>
+								     
 								   </s:iterator>
 								</s:bean>
                                     
