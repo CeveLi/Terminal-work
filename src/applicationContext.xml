@@ -52,6 +52,11 @@
     <!-- 开启事务注解 -->
     <tx:annotation-driven transaction-manager="transactionManager" />
     
+    
+    <bean id="buyAction" class="com.etc.action.buyAction" scope="prototype">
+    	<property name="userService" ref="userService"></property>
+    </bean>
+    
     <bean id="loginAction" class="com.etc.action.loginAction" scope="prototype">
     	<property name="userService" ref="userService"></property>
     </bean>

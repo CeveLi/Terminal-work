@@ -291,14 +291,14 @@
                                                 </span>
                                                 <div class="product-short-description">
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis in, officiis ea quae assumenda ipsam dolores tempore illo ullam odit natus sed rem distinctio atque mollitia. Illo est accusamus laboriosam.
+                                                    	这里是商品简介
                                                     </p>
                                                 </div>
                                                 <div class="product-list-action">
                                                     <ul>
                                                         <li><a href="#"><i class="fa fa-compress" aria-hidden="true"></i></a></li>
                                                         <li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                                                        <li><a href="shop.jsp?bid=<s:property value="#book.bid"/>">立即购买</a></li>
+                                                        <li><a href="buyAction.action?bid=<s:property value="#book.bid" />&price=<s:property value="#book.price" />" onclick="if(confirm('确认购买吗？')==false)return false;">立即购买</a></li>
                                                     </ul>
                                                 </div>
                                             </div>

@@ -3,6 +3,7 @@ package com.etc.service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.etc.dao.UserDao;
+import com.etc.entity.History;
 import com.etc.entity.User;
 
 @Transactional
@@ -28,6 +29,17 @@ public class UserService {
 		user.setPassword(password);
 		user.setPhone(phone);
 		return userDao.addUser(user);
+	}
+	
+	public boolean userBuy(User user,Integer bid) {
+		History history = new History();
+		history.setBid(bid);
+		history.setUid(user.getId());
+		return userDao.buyUser(user, history);
+	}
+	
+	public boolean userUpdate(User user) {
+		return userDao.updateUser(user);
 	}
 	public User userInfo(User user){
 		return userDao.userInfo(user.getUsername());

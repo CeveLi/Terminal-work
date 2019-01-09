@@ -22,10 +22,14 @@
 		</action>
 		
 		<action name="listAction" class="listAction">
-			<result name="success">/shop-list.jsp</result>
-			
+			<result name="success">/shop-list.jsp</result>			
 		</action>
 		
+		<action name="buyAction" class="buyAction">
+			<result name="success">/user-info.jsp</result>	
+			<result name="login">/logNreg.jsp</result>
+			<interceptor-ref name="myStack" />		
+		</action>
 		
 		<action name="user-info" class="userAction">
 			<result name="success">/user-info.jsp</result>

@@ -22,6 +22,19 @@ public class UserDao {
 		return false;
 	}
 	
+	//更新用户信息
+	public boolean updateUser(User user) {
+		hibernateTemplate.update(user);
+		return true;
+	}
+	
+	//购买图书
+	public boolean buyUser(User user,History history) {
+		hibernateTemplate.update(user);
+		hibernateTemplate.save(history);
+		return true;
+	}
+	
 	// 验证用户名是否存在
 	public boolean verifyUsername(String username) {
 		List<User> users = (List<User>) hibernateTemplate.find("from User where username=?", username);
