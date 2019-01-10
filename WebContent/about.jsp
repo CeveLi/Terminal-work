@@ -90,7 +90,7 @@
                                     <div class="main-menu">
                                         <nav>
                                             <ul>
-                                                <li><a href="#">主页</a></li>
+                                                <li><a href="index.jsp">主页</a></li>
 												<li><a href="about.jsp">关于我们</a></li>
 												<li><a href="shop-list.jsp">类别列表</a></li>
                                             </ul>
@@ -102,57 +102,23 @@
                                         <ul>
                                             <li>
                                                 <div class="header-top-search search-box">
-                                                    <form>
-                                                    <input class="search-text" type="text"  placeholder="Search Here..." >
+                                                  <form action="selectAction.action" method="post">
+                                                    <input name="name" class="search-text" type="text"  placeholder="Search Here..." >
+                                                    
                                                     <a class="search-button" href="#">
-                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                        <i class="fa fa-search" aria-hidden="true"></i>                                                        
                                                     </a>
+                                                    <input type="submit" value="搜索"/>
                                                     </form>
                                                 </div>
                                             </li>
                                             <li>
                                                 <a href="#" class="cart-area floatright">
-                                                    <i class="flaticon-commerce"></i><span>2</span>
+                                                    <i class="flaticon-commerce"></i>
                                                 </a>
                                                 <ul class="chart-scroll">
-                                                    <li>
-                                                        <div class="cart-single-product">
-                                                            <div class="media">
-                                                            <div class="pull-left cart-product-img">
-                                                                <a href="#">
-                                                                    <img class="media-object" src="img/product/product3.jpg" alt="product">
-                                                                </a>
-                                                            </div>
-                                                            <div class="media-body cart-content">
-                                                                <h4 class="media-heading"><a href="#">Product Title Here</a></h4>
-                                                                <a href="#" class="trash"><i class="fa fa-trash-o"></i></a>
-                                                                <p>Quantity : 1</p>
-                                                                <div class="cart-product-price">
-                                                                    <span>$49</span>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="cart-single-product">
-                                                            <div class="media">
-                                                            <div class="pull-left cart-product-img">
-                                                                <a href="#">
-                                                                    <img class="media-object" src="img/product/product2.jpg" alt="product">
-                                                                </a>
-                                                            </div>
-                                                            <div class="media-body cart-content">
-                                                                <h4 class="media-heading"><a href="#">Product Title Here</a></h4>
-                                                                <a href="#" class="trash"><i class="fa fa-trash-o"></i></a>
-                                                                <p>Quantity : 1</p>
-                                                                <div class="cart-product-price">
-                                                                    <span>$99</span>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                                   
+                                                    
                                                     <li><a href="checkout.jsp" class="checkout-button">Checkout</a></li>        
                                                 </ul>
                                             </li>

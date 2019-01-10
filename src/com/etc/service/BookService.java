@@ -11,7 +11,6 @@ import com.etc.entity.Book;
 @Transactional
 public class BookService {
 	private BookDao bookDao;
-	private UserDao userDao;
 
 	
 
@@ -24,5 +23,10 @@ public class BookService {
 	public List<Book> getBooks(){
 		List<Book> list = bookDao.getAllBooks();
 		return list;
+	}
+	
+	
+	public Book getNameBooks(String name) {
+		return bookDao.getNameBooks(name);
 	}
 }

@@ -31,6 +31,10 @@
 			<interceptor-ref name="myStack" />		
 		</action>
 		
+		<action name="selectAction" class="selectAction">
+			<result name="success">/single-product.jsp</result>
+		</action>
+		
 		<action name="user-info" class="userAction">
 			<result name="success">/user-info.jsp</result>
 			<result name="login">/logNreg.jsp</result>

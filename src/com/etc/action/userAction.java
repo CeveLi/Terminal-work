@@ -19,7 +19,7 @@ public class userAction extends ActionSupport implements SessionAware{
 	private Map session;
 	
 	public void setSession(Map session) {  
-        this.session = session;  
+        this.session = session;
     }  
 	
 	public void setUserService(UserService userService) {

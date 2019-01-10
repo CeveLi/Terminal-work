@@ -110,13 +110,14 @@
 								<ul>
 									<li>
 										<div class="header-top-search search-box">
-											<form>
-												<input class="search-text" type="text"
-													placeholder="Search Here..."> <a
-													class="search-button" href="#"> <i class="fa fa-search"
-													aria-hidden="true"></i>
-												</a>
-											</form>
+											<form action="selectAction.action" method="post">
+                                                    <input name="name" class="search-text" type="text"  placeholder="Search Here..." >
+                                                    
+                                                    <a class="search-button" href="#">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>                                                        
+                                                    </a>
+                                                    <input type="submit" value="搜索"/>
+                                            </form>
 										</div>
 									</li>
 									<li><a href="#" class="cart-area floatright"> <i

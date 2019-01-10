@@ -1,4 +1,4 @@
-﻿<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+﻿<%@ page language="java" import="java.util.*" import="com.etc.entity.*" pageEncoding="utf-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html class="no-js" lang="">
@@ -92,10 +92,7 @@
                                             <ul>
                                                 <li><a href="index.jsp">主页</a></li>
 												<li><a href="about.jsp">关于我们</a></li>
-												<li><a href="shop.jsp">类别网格</a></li>
 												<li><a href="shop-list.jsp">类别列表</a></li>
-												<li><a href="single-product.jsp">单一产品</a></li>
-												<li><a href="contact.jsp">联系</a></li> 
                                             </ul>
                                         </nav>
                                     </div>
@@ -105,57 +102,22 @@
                                         <ul>
                                             <li>
                                                 <div class="header-top-search search-box">
-                                                    <form>
-                                                    <input class="search-text" type="text"  placeholder="Search Here..." >
+                                                 <form action="selectAction.action" method="post">
+                                                    <input name="name" class="search-text" type="text"  placeholder="Search Here..." >
+                                                    
                                                     <a class="search-button" href="#">
-                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                        <i class="fa fa-search" aria-hidden="true"></i>                                                        
                                                     </a>
+                                                    <input type="submit" value="搜索"/>
                                                     </form>
                                                 </div>
                                             </li>
                                             <li>
                                                 <a href="#" class="cart-area floatright">
-                                                    <i class="flaticon-commerce"></i><span>2</span>
+                                                    <i class="flaticon-commerce"></i>
                                                 </a>
                                                 <ul class="chart-scroll">
-                                                    <li>
-                                                        <div class="cart-single-product">
-                                                            <div class="media">
-                                                            <div class="pull-left cart-product-img">
-                                                                <a href="#">
-                                                                    <img class="media-object" src="img/product/product3.jpg" alt="product">
-                                                                </a>
-                                                            </div>
-                                                            <div class="media-body cart-content">
-                                                                <h4 class="media-heading"><a href="#">产品标题</a></h4>
-                                                                <a href="#" class="trash"><i class="fa fa-trash-o"></i></a>
-                                                                <p>数量 : 1</p>
-                                                                <div class="cart-product-price">
-                                                                    <span>$49</span>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="cart-single-product">
-                                                            <div class="media">
-                                                            <div class="pull-left cart-product-img">
-                                                                <a href="#">
-                                                                    <img class="media-object" src="img/product/product2.jpg" alt="product">
-                                                                </a>
-                                                            </div>
-                                                            <div class="media-body cart-content">
-                                                                <h4 class="media-heading"><a href="#">产品标题</a></h4>
-                                                                <a href="#" class="trash"><i class="fa fa-trash-o"></i></a>
-                                                                <p>数量 : 1</p>
-                                                                <div class="cart-product-price">
-                                                                    <span>$99</span>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                                
                                                     <li><a href="checkout.html" class="checkout-button">结帐</a></li>        
                                                 </ul>
                                             </li>
@@ -176,10 +138,7 @@
                                                         <ul class="sidenav-nav">
                                                             <li><a href="index.jsp">主页</a></li>
 															<li><a href="about.jsp">关于我们</a></li>
-															<li><a href="shop.jsp">类别网格</a></li>
 															<li><a href="shop-list.jsp">类别列表</a></li>
-															<li><a href="single-product.jsp">单一产品</a></li>
-															<li><a href="contact.jsp">联系</a></li>   
                                                         </ul><!-- times-->
                                                     </div>
                                                     <span class="side-menu-open side-menu-trigger"><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -202,10 +161,7 @@
                                         <ul>
                                             <li><a href="index.jsp">主页</a></li>
 											<li><a href="about.jsp">关于我们</a></li>
-											<li><a href="shop.jsp">类别网格</a></li>
-											<li><a href="shop-list.jsp">类别列表</a></li>
-											<li><a href="single-product.jsp">单一产品</a></li>
-											<li><a href="contact.jsp">联系</a></li>                               
+											<li><a href="shop-list.jsp">类别列表</a></li>                            
                                         </ul>
                                     </nav>
                                 </div>                  
@@ -226,7 +182,6 @@
                         <ul>
                             <li><a href="index.jsp">主页 -</a></li>
                             <li><a href="shop.jsp">购物 -</a></li>
-                            <li class="active">单一产品</li>
                         </ul>
                     </div>
                 </div>
@@ -242,11 +197,13 @@
                                 <div class="single-product">
                                     <div class="col-lg-5 col-md-5 col-sm-5 product-image">
                                         <!-- Tab panes -->
+                                        <s:debug></s:debug>
                                         <div class="tab-content">
                                             <div role="tabpanel" class="tab-pane active product-picture" id="product-1">
                                                 <div class="overlayer"></div>
                                                 <a href="single-product.html" class="zoom ex"> 
-                                                    <img src="img/product/detail_product1.jpg" alt="single Product Image">
+                                                
+                                                    <img src="img/product/detail_product<s:property value="session.bid"/>.jpg" alt="single Product Image">
                                                     <div class="overlayer"></div>
                                                 </a>
                                             </div>
@@ -310,7 +267,21 @@
                                                 <ul>
                                                     <li>
                                                         <div class="detail-cart">
-                                                            <a href="buyAction.action?bid=<s:property value="#book.bid" />&price=<s:property value="#book.price" />" onclick="if(confirm('确认购买吗？')==false)return false;">立即购买</a>
+                                                        <%int bid=1;
+                                                        int price=30;
+                                                        Book book;
+                                                        if(session.getAttribute("book")!=null)
+                                                        {
+                                                        	book=(Book)session.getAttribute("book");
+                                                        	bid=book.getBid();
+                                                        	price=book.getPrice();
+                                                        }
+                                                        else if(request.getParameter("bid")!=null&&request.getParameter( "price ")!=null)
+                                                        {
+                                                        bid = Integer.parseInt(request.getParameter("bid")); 
+                                                        price = Integer.parseInt(request.getParameter( "price ")); 
+                                                        }%>
+                                                            <a href="buyAction.action?bid=<%=bid %>&price=<%=price %>" onclick="if(confirm('确认购买吗？')==false)return false;">立即购买</a>
                                                         </div>
                                                     </li>
                                                     <li>

@@ -73,6 +73,10 @@
     	<property name="bookService" ref="bookService"></property>
     </bean>
     
+    <bean id="selectAction" class="com.etc.action.selectAction" scope="prototype">
+    	<property name="bookService" ref="bookService"></property>
+    </bean>
+    
     <bean id="userService" class="com.etc.service.UserService">
     	<property name="userDao" ref="userDao"></property>
     </bean>

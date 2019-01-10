@@ -102,57 +102,22 @@
                                         <ul>
                                             <li>
                                                 <div class="header-top-search search-box">
-                                                    <form>
-                                                    <input class="search-text" type="text"  placeholder="Search Here..." >
+                                                   <form action="selectAction.action" method="post">
+                                                    <input name="name" class="search-text" type="text"  placeholder="Search Here..." >
+                                                    
                                                     <a class="search-button" href="#">
-                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                        <i class="fa fa-search" aria-hidden="true"></i>                                                        
                                                     </a>
+                                                    <input type="submit" value="搜索"/>
                                                     </form>
                                                 </div>
                                             </li>
                                             <li>
                                                 <a href="#" class="cart-area floatright">
-                                                    <i class="flaticon-commerce"></i><span>2</span>
+                                                    <i class="flaticon-commerce"></i>
                                                 </a>
                                                 <ul class="chart-scroll">
-                                                    <li>
-                                                        <div class="cart-single-product">
-                                                            <div class="media">
-                                                            <div class="pull-left cart-product-img">
-                                                                <a href="#">
-                                                                    <img class="media-object" src="img/product/product3.jpg" alt="product">
-                                                                </a>
-                                                            </div>
-                                                            <div class="media-body cart-content">
-                                                                <h4 class="media-heading"><a href="#">产品标题</a></h4>
-                                                                <a href="#" class="trash"><i class="fa fa-trash-o"></i></a>
-                                                                <p>数量 : 1</p>
-                                                                <div class="cart-product-price">
-                                                                    <span>$49</span>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="cart-single-product">
-                                                            <div class="media">
-                                                            <div class="pull-left cart-product-img">
-                                                                <a href="#">
-                                                                    <img class="media-object" src="img/product/product2.jpg" alt="product">
-                                                                </a>
-                                                            </div>
-                                                            <div class="media-body cart-content">
-                                                                <h4 class="media-heading"><a href="#">产品标题</a></h4>
-                                                                <a href="#" class="trash"><i class="fa fa-trash-o"></i></a>
-                                                                <p>数量 : 1</p>
-                                                                <div class="cart-product-price">
-                                                                    <span>$99</span>
-                                                                </div>
-                                                            </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                                
                                                     <li><a href="checkout.jsp" class="checkout-button">结帐</a></li>        
                                                 </ul>
                                             </li>
@@ -265,7 +230,7 @@
                                         
                                         <div class="product-list-content col-lg-8 col-md-8 col-sm-8">
                                             <div class="product-content">
-                                                <h3 class="name"><a href="single-product.jsp"><s:property value="#book.name"/></a></h3>
+                                                <h3 class="name"><a href="single-product.jsp?bid=<s:property value="#book.bid"/>&price=<s:property value="#book.price"/>"><s:property value="#book.name"/></a></h3>
                                                 <div class="review">
                                                     <ul>
                                                         <li><a href="#"><i class="fa fa-star"></i></a></li>
