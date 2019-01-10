@@ -69,8 +69,8 @@
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                 <div class="header-address">
                                     <ul>
-                                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Collins Street West Victoria 8007 Australia</li>
-                                        <li><i class="fa fa-globe" aria-hidden="true"></i>English</li>
+                                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>广东广州</li>
+                                        <li><i class="fa fa-globe" aria-hidden="true"></i>中文</li>
                                     </ul>
                                 </div>
                             </div>
@@ -92,7 +92,7 @@
                                             <ul>
                                                 <li><a href="index.jsp">主页</a></li>
 												<li><a href="about.jsp">关于我们</a></li>
-												<li><a href="shop-list.jsp">类别列表</a></li>
+												<li><a href="shop-list.jsp">商品列表</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -182,7 +182,7 @@
                     <div class="breadcrumb">
                         <ul>
                             <li><a href="index.jsp">首页 -</a></li>
-                            <li><a href="#">页数 - </a></li>
+                            
                             <li class="active">关于我们</li>
                         </ul>
                     </div>
@@ -195,8 +195,8 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <div class="success-content">
-                                <h2>我们是SEO专家机构，为您的成功而努力</h2>
-                                <p>Drem ipsum dolor sit amet, consetetur sadipscing elitr nonumy tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore. At vero eos et accusam et justo duo dolores et ea rebumkasd gubergren, no sea takimata sanctus est Lorem ipsum dolor Lorem sit amet, consetetur sadipscing.</p>
+                                <h2>我们专业的SEO机构，您的成功是我们不懈的动力</h2>
+                                <p></p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -214,8 +214,8 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <div class="content-part">
-                                <h2>我们是怎样长大的？</h2>
-                                <p>Smply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a tycimen book. It has surstry's standard dummy text evervived ivtting,ssages.</p>
+                                <h2>我们是怎样成长的？</h2>
+                                <p></p>
                                 <a class="ghost-btn" href="#">看更多视频</a>
                             </div>
                         </div>
@@ -234,7 +234,7 @@
                     <div class="row">
                         <div class="title-section">
                             <h2>为什么需要我们的服务</h2>
-                            <p>印刷排版行业</p>
+                            
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="single-service">
@@ -311,7 +311,7 @@
                 <div class="container">
                     <div class="title-section">
                         <h2>我们优秀的团队</h2>
-                        <p>印刷排版行业</p>
+                        
                     </div>
                     <div class="rc-carousel"
                         data-loop="true"
@@ -337,9 +337,9 @@
                                 <a href="#"><img src="img/team/team1.jpg" alt="team"></a>
                             </div>
                             <div class="team-content">
-                                <h3><a href="#">戴维史密斯</a></h3>
-                                <span class="designation">SEO Analyst</span>
-                                <p>只是印刷和排版行业ipsu的虚拟文本</p>
+                                <h3><a href="#">李泽涛</a></h3>
+                                <span class="designation">编译人员</span>
+                                <p>负责框架搭建与商品购买列表显示</p>
                                 <ul>
                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -348,46 +348,15 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="single-team-item">
-                            <div class="team-image">
-                                <a href="#"><img src="img/team/team2.jpg" alt="team"></a>
-                            </div>
-                            <div class="team-content">
-                                <h3><a href="#">西尔维亚雪</a></h3>
-                                <span class="designation">网站设计者</span>
-                                <p>李泽涛和邓宗源</p>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="single-team-item">
-                            <div class="team-image">
-                                <a href="#"><img src="img/team/team3.jpg" alt="team"></a>
-                            </div>
-                            <div class="team-content">
-                                <h3><a href="#">罗伯特约瑟夫</a></h3>
-                                <span class="designation">搜索引擎优化分析师</span>
-                                <p>只是印刷和排版行业ipsu的虚拟文本。</p>
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
+                        
                         <div class="single-team-item">
                             <div class="team-image">
                                 <a href="#"><img src="img/team/team4.jpg" alt="team"></a>
                             </div>
                             <div class="team-content">
-                                <h3><a href="#">戴维史密斯</a></h3>
-                                <span class="designation">搜索引擎优化分析师</span>
-                                <p>只是印刷和排版行业ipsu的虚拟文本。</p>
+                                <h3><a href="#">邓宗源</a></h3>
+                                <span class="designation">编译人员</span>
+                                <p>实现搜索与界面优化及其他事务</p>
                                 <ul>
                                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>

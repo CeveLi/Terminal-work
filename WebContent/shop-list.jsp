@@ -69,8 +69,8 @@
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                 <div class="header-address">
                                     <ul>
-                                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Collins Street West Victoria 8007 Australia</li>
-                                        <li><i class="fa fa-globe" aria-hidden="true"></i>English</li>
+                                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>广东广州</li>
+                                        <li><i class="fa fa-globe" aria-hidden="true"></i>中文</li>
                                     </ul>
                                 </div>
                             </div>
@@ -92,7 +92,7 @@
                                             <ul>
                                                 <li><a href="index.jsp">主页</a></li>
 												<li><a href="about.jsp">关于我们</a></li>
-												<li><a href="shop-list.jsp">类别列表</a></li> 
+												<li><a href="shop-list.jsp">商品列表</a></li> 
                                             </ul>
                                         </nav>
                                     </div>
@@ -138,7 +138,7 @@
                                                         <ul class="sidenav-nav">
 				                                           	<li><a href="index.jsp">主页</a></li>
 															<li><a href="about.jsp">关于我们</a></li>
-															<li><a href="shop-list.jsp">类别列表</a></li>
+															<li><a href="shop-list.jsp">商品列表</a></li>
                                                         </ul><!-- times-->
                                                     </div>
                                                     <span class="side-menu-open side-menu-trigger"><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -161,7 +161,7 @@
                                         <ul>
 								            <li><a href="index.jsp">主页</a></li>
 											<li><a href="about.jsp">关于我们</a></li>
-											<li><a href="shop-list.jsp">类别列表</a></li>
+											<li><a href="#">商品列表</a></li>
                                         </ul>
                                     </nav>
                                 </div>                  
@@ -176,14 +176,14 @@
             <div class="header-banner">
                 <div class="container">
                     <div class="header-title">
-                        <h2>类别表格</h2>
+                        <h2>商品列表</h2>
                     </div>
                     <div class="breadcrumb">
                         <ul>
                             <li><a href="index.jsp">主页 -</a></li>
-                            <li><a href="index.jsp">购物 -</a></li>
-                            <li><a href="shop.jsp">购物 -</a></li>
-                            <li class="active">类别列表</li>
+                            
+                           
+                            <li class="active">商品列表</li>
                         </ul>
                     </div>
                 </div>
@@ -198,9 +198,7 @@
                             <div class="body-content">
                                 <div class="online-header">
                                     <div class="pager-left-area col-lg-7 col-md-7 col-sm-7">
-                                        <div class="showing-result">
-                                            <h3>Showing 13–24 of 50 results</h3>
-                                        </div>
+                                        
                                     </div>
                                     <div class="pager-right-area col-lg-5 col-md-5 col-sm-5">
                                         <div class="short-list">
@@ -215,7 +213,7 @@
                                     </div>
                                 </div>
                                 <div class="product-category-list">
-                                <s:debug></s:debug>
+                                
                                 
                                 <!--  使用s：iterator标签循环获取session,booklist值并命名为book-->
                                 <s:iterator id="bookiterator" value="#session.booklist" var="book" >
@@ -241,7 +239,7 @@
                                                     </ul>
                                                 </div>
                                                 <span class="regular-price">
-                                                    <span class="product-price"><s:property value="#book.price"/></span>
+                                                    <span class="product-price">￥<s:property value="#book.price"/></span>
                                                 </span>
                                                 <div class="product-short-description">
                                                     <p>
@@ -279,8 +277,7 @@
                                               </a>
                                             </li>
                                             <li><a class="active" href="#">1</a></li>
-                                            <li><a href="#">2</a></li>
-                                            <li><a href="#">3</a></li>
+                                            
                                             <li>
                                               <a href="#" aria-label="Next">
                                                 <span aria-hidden="true">&raquo;</span>
@@ -313,104 +310,8 @@
                                         <li><a href="#">数字营销</a></li>
                                     </ul>
                                 </div>
-                                <div class="single-sidebar">
-                                    <div class="seo-store">
-                                        <div class="store-img">
-                                            <img src="img/seo_store.jpg" alt="store">
-                                        </div>
-                                        <div class="overly">
-                                            <h4>SEO E-Store<br><span>$59</span></h4>
-                                            <a href="#">现在开始购物</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="single-sidebar">
-                                    <h3>最好的销售者</h3>
-                                    <div class="best-seller">
-                                        <div class="pull-left product-img">
-                                            <a href="#"><img src="img/product/product5.jpg" alt="popular"></a>
-                                        </div>
-                                        <div class="media-body product-content">
-                                            <h4><a href="">产品标题</a></h4>
-                                            <div class="stars-existing">
-                                                <ul>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                </ul>
-                                            </div>
-                                            <div class="product-price">
-                                                <span class="regular-price">$80</span>
-                                                <span class="sell-price">$90</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="best-seller">
-                                        <div class="pull-left product-img">
-                                            <a href="#"><img src="img/product/product2.jpg" alt="popular"></a>
-                                        </div>
-                                        <div class="media-body product-content">
-                                            <h4><a href="">产品标题</a></h4>
-                                            <div class="stars-existing">
-                                                <ul>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                </ul>
-                                            </div>
-                                            <div class="product-price">
-                                                <span class="regular-price">$80</span>
-                                                <span class="sell-price">$90</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="best-seller">
-                                        <div class="pull-left product-img">
-                                            <a href="#"><img src="img/product/product3.jpg" alt="popular"></a>
-                                        </div>
-                                        <div class="media-body product-content">
-                                            <h4><a href="">产品标题</a></h4>
-                                            <div class="stars-existing">
-                                                <ul>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                </ul>
-                                            </div>
-                                            <div class="product-price">
-                                                <span class="regular-price">$80</span>
-                                                <span class="sell-price">$90</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="best-seller">
-                                        <div class="pull-left product-img">
-                                            <a href="#"><img src="img/product/product4.jpg" alt="popular"></a>
-                                        </div>
-                                        <div class="media-body product-content">
-                                            <h4><a href="">产品标题</a></h4>
-                                            <div class="stars-existing">
-                                                <ul>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
-                                                    <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
-                                                </ul>
-                                            </div>
-                                            <div class="product-price">
-                                                <span class="regular-price">$80</span>
-                                                <span class="sell-price">$90</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
+                                
                                 <div class="single-sidebar">
                                     <h3>标签</h3>
                                     <div class="tags">

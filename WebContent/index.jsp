@@ -71,7 +71,7 @@
                                              	<li><a href="user-info.action">用户${sessionScope.user.username}</a></li>
                                                 <li><a href="index.jsp">主页</a></li>
 												<li><a href="about.jsp">关于我们</a></li>
-												<li><a href="listAction.action">列表</a></li>
+												<li><a href="listAction.action">商品列表</a></li>
                                             </ul>
                                         </nav>
                                     </div>
