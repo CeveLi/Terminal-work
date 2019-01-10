@@ -67,8 +67,8 @@ public class UserDao {
 	//根据uid查询图书
 	
 		public List<Book> getUserBooks(User user){
-			UserDao his=new UserDao();
-			List bids = his.history(user);
+			
+			List bids = history(user);
 			List<Book> list = new ArrayList<Book>();
 			for(int i=1;i<bids.size();i++)
 			{

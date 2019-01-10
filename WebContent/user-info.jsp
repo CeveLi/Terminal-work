@@ -256,7 +256,7 @@
 							</div>
 							<div class="product-content">
 								<h3>
-									<a href="single-product.html">产品标题</a>
+									<a href="single-product.html"><s:property value="#book.name"/></a>
 								</h3>
 								<ul>
 									<li><a href="#"><i class="fa fa-star"
@@ -270,7 +270,7 @@
 									<li class="uncolor"><a href="#"><i
 											class="fa fa-star-o" aria-hidden="true"></i></a></li>
 								</ul>
-								<span class="regular-price"> <span class="product-price">$29.00</span>
+								<span class="regular-price"> <span class="product-price"><s:property value="#book.price"/></span>
 								</span>
 							</div>
 						</div>
