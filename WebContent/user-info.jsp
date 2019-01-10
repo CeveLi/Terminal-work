@@ -248,10 +248,10 @@
 				<s:bean name="org.apache.struts2.util.Counter" id="counter">
 					<s:param name="first" value="1" />
 					<s:param name="last" value="5" />
-					<s:iterator>
+					<s:iterator id="bookiterator" value="#session.books" var="book">
 						<div class="single-related-product">
 							<div class="product-media">
-								<a href="#"><img src="img/product/product<s:property/>.jpg"
+								<a href="#"><img src="img/product/product<s:property value="#book.bid"/>.jpg"
 									alt="product"></a>
 							</div>
 							<div class="product-content">

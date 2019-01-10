@@ -14,22 +14,5 @@ public class HistoryDao {
 		this.hibernateTemplate = hibernateTemplate;
 	}
 	
-	//返回用户有的书籍
-		public List<History> history(Integer uid)
-		{
-			
-			List<History> list = (List<History>)hibernateTemplate.find("from History where uid=?",uid);
-			System.out.println(list);
-			
-			//System.out.println(user.getPhone());
-			return list;
-		}
-		
-		//history插入一条数据
-		public void addBook(int bid,int uid){
-			History his=new History();
-			his.setBid(bid);
-			his.setUid(uid);
-			hibernateTemplate.save(his);
-		}
+	
 }

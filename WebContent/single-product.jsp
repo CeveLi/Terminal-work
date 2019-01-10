@@ -310,7 +310,7 @@
                                                 <ul>
                                                     <li>
                                                         <div class="detail-cart">
-                                                            <a href="#">添加到购物车</a>
+                                                            <a href="buyAction.action?bid=<s:property value="#book.bid" />&price=<s:property value="#book.price" />" onclick="if(confirm('确认购买吗？')==false)return false;">立即购买</a>
                                                         </div>
                                                     </li>
                                                     <li>

@@ -1,8 +1,12 @@
 package com.etc.service;
 
+import java.util.List;
+
 import org.springframework.transaction.annotation.Transactional;
 
+import com.etc.dao.BookDao;
 import com.etc.dao.UserDao;
+import com.etc.entity.Book;
 import com.etc.entity.History;
 import com.etc.entity.User;
 
@@ -45,5 +49,10 @@ public class UserService {
 		return userDao.userInfo(user.getUsername());
 	}
 	
+	public List<Book> selectUserBook(User user){
+		List<Book> books=userDao.getUserBooks(user);
+		return books;
+		
+	}
 	
 }

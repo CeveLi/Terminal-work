@@ -92,10 +92,7 @@
                                             <ul>
                                                 <li><a href="#">主页</a></li>
 												<li><a href="about.jsp">关于我们</a></li>
-												<li><a href="shop.jsp">类别网格</a></li>
 												<li><a href="shop-list.jsp">类别列表</a></li>
-												<li><a href="single-product.jsp">单一产品</a></li>
-												<li><a href="contact.jsp">联系我们</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -176,10 +173,7 @@
                                                         <ul class="sidenav-nav">
                                                             <li><a href="#">主页</a></li>
 															<li><a href="about.jsp">关于我们</a></li>
-															<li><a href="shop.jsp">类别网格</a></li>
 															<li><a href="shop-list.jsp">类别列表</a></li>
-															<li><a href="single-product.jsp">单一产品</a></li>
-															<li><a href="contact.jsp">联系我们</a></li>
                                                         </ul><!-- times-->
                                                     </div>
                                                     <span class="side-menu-open side-menu-trigger"><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -202,10 +196,7 @@
                                         <ul>
                                             <li><a href="#">主页</a></li>
 											<li><a href="about.jsp">关于我们</a></li>
-											<li><a href="shop.jsp">类别网格</a></li>
-											<li><a href="shop-list.jsp">类别列表</a></li>
-											<li><a href="single-product.jsp">单一产品</a></li>
-											<li><a href="contact.jsp">联系我们</a></li>                         
+											<li><a href="shop-list.jsp">类别列表</a></li>                       
                                         </ul>
                                     </nav>
                                 </div>                  
@@ -444,134 +435,10 @@
             </div>
             <!-- Our Excellent Team End Here -->
             <!-- Ready to promote Start Here -->
-            <div class="ready-promote-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                            <div class="content">
-                                <h3>准备好在线推广您的网站了吗？</h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <div class="button-area">
-                                <a class="default-button-btn" href="#">高级功能</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- Ready to promote End Here -->
             <!-- Footer section Start Here -->
-            <div class="footer-section-area padding-top-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="title">
-                                <h3>信息</h3>
-                            </div>
-                            <div class="information">
-                                <ul>
-                                    <li><a href="#">计划和价格</a></li>
-                                    <li><a href="#">SEO工具</a></li>
-                                    <li><a href="#">支持与常见问题解答</a></li>
-                                    <li><a href="#">博客和文章</a></li>
-                                    <li><a href="#">公司和联系方式</a></li>
-                                    <li><a href="#">服务条款</a></li>
-                                    <li><a href="#">隐私政策</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="title">
-                                <h3>Our Services</h3>
-                            </div>
-                            <div class="our-service">
-                                <ul>
-                                    <li><a href="#">搜索引擎优化服务</a></li>
-                                    <li><a href="#">虚拟营销</a></li>
-                                    <li><a href="#">点击付费</a></li>
-                                    <li><a href="#">电子邮件营销</a></li>
-                                    <li><a href="#">社交软件</a></li>
-                                    <li><a href="#">关键字分析</a></li>
-                                    <li><a href="#">网页分析工具</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="title">
-                                <h3>热门帖子</h3>
-                            </div>
-                            <div class="popular-post">
-                                <ul>
-                                    <li>
-                                        <span class="post-date">26 9月, 2017</span>
-                                        <a href="#">优化你的移动搜索网站当一个未知。</a>
-                                    </li>
-                                    <li>
-                                        <span class="post-date">25 9月, 2017</span>
-                                        <a href="#">优化你的移动搜索网站当一个未知。</a>
-                                    </li>
-                                    <li>
-                                        <span class="post-date">24 9月, 2017</span>
-                                        <a href="#">优化你的移动搜索网站当一个未知。</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="title">
-                                <h3>询价</h3>
-                            </div>
-                            <div class="get-quote">
-                                <form>
-                                    <fieldset>
-                                        <!-- Text input-->
-                                        <div class="form-group">
-                                            <input id="quote-name" name="textinput" placeholder="Name*" class="form-control input-md" type="text">
-                                        </div>
-                                        <!-- Text input-->
-                                        <div class="form-group">
-                                            <input id="quote-email" name="textinput" placeholder="E-mail*" class="form-control input-md" type="text">
-                                        </div>
-                                        <!-- Textarea-->
-                                        <div class="form-group">
-                                            <textarea id="textarea" name="textarea" placeholder="Message" class="form-control input-md" rows="3"></textarea>
-                                        </div>
-                                        <div class="form-group send-button">
-                                            <button type="submit" class="ghost-btn btn-send">Submit</button>
-                                        </div>
-                                    </fieldset>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- Footer section End Here -->
             <!-- Copyright section Start Here -->
-            <div class="copy-right-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                            <div class="copy-right">
-                                <p>版权 &copy; 2017.公司名称保留所有权利。更多模板 <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                            <div class="social-media">
-                                <ul>
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- Copyright section End Here -->
         </div>
         <!-- Preloader Start Here -->

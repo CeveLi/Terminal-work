@@ -17,6 +17,7 @@ public class buyAction extends ActionSupport implements SessionAware{
 	private Map session;  
 	private UserService userService;
 	private Integer bid;
+	private String name;
 	private Integer price;
     public Integer getPrice() {
 		return price;
@@ -33,6 +34,14 @@ public class buyAction extends ActionSupport implements SessionAware{
 	public void setBid(Integer bid) {
 		this.bid = bid;
 	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public void setSession(Map session) {  
         this.session = session;  
@@ -46,12 +55,14 @@ public class buyAction extends ActionSupport implements SessionAware{
 		
 		Book book=new Book();
 		User user=new User();
+		boolean p;
 		user=(User)ActionContext.getContext().getSession().get("user");
 		user.setMoney(user.getMoney()-price);
-		userService.userBuy(user,bid);
-		
+		p=userService.userBuy(user,bid);
+		List<Book> books=userService.selectUserBook(user);
+		session.put("books", books);
 		System.out.println(user);
-		System.out.println("buyAction³É¹¦");
+		System.out.println(p);
 		return SUCCESS;
 	}
 }

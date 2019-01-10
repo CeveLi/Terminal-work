@@ -16,7 +16,7 @@
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
     	<property name="driverClass" value="com.mysql.jdbc.Driver"></property>
     	<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/sshwork"></property>
-    	<property name="user" value="root"></property>
+    	<property name="user" value="john"></property>
     	<property name="password" value="123456"></property>
     </bean>
     
@@ -85,6 +85,9 @@
     	<property name="hibernateTemplate" ref="hibernateTemplate"></property>
     </bean>
     
+     <bean id="historyDao" class="com.etc.dao.HistoryDao">
+    	<property name="hibernateTemplate" ref="hibernateTemplate"></property>
+    </bean> 
     
     <bean id="bookDao" class="com.etc.dao.BookDao">
     	<property name="hibernateTemplate" ref="hibernateTemplate"></property>

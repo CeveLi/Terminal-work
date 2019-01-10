@@ -271,7 +271,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h3><a href="single-product.html">产品标题</a></h3>
+                                            <h3><a href="single-product.jsp">产品标题</a></h3>
                                             <ul>
                                                 <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
                                                 <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
@@ -320,7 +320,7 @@
                                             <div class="overlay"></div>
                                             <div class="product-info">
                                                 <ul>
-                                                    <li><a href="#" title="Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                                    <li><a href="buyAction.action?bid=<s:property value="#book.bid" />&price=<s:property value="#book.price" />" title="Cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
                                                     <li><a href="#" title="Whishlist"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
                                                     <li><a href="#" title="Campare"><i class="fa fa-compress" aria-hidden="true"></i></a></li>
                                                 </ul>

@@ -5,11 +5,13 @@ import java.util.List;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.etc.dao.BookDao;
+import com.etc.dao.UserDao;
 import com.etc.entity.Book;
 
 @Transactional
 public class BookService {
 	private BookDao bookDao;
+	private UserDao userDao;
 
 	
 
@@ -20,7 +22,6 @@ public class BookService {
 
 	
 	public List<Book> getBooks(){
-		System.out.println("bookservice³É¹¦");
 		List<Book> list = bookDao.getAllBooks();
 		return list;
 	}
